@@ -27,7 +27,7 @@ class ViewController: UIViewController {
         }
     }
     
-    private func networking(parameters: String, completion: @escaping (Int)->()) {
+    private func networking(parameters: String, completion: @escaping (Int) -> Void) {
         
         // make networking calls here
         
@@ -55,7 +55,7 @@ class ViewController: UIViewController {
         
     }
     
-    private func firstNetworkCall(parameters: String, completion: @escaping (Int) -> ()) {
+    private func firstNetworkCall(parameters: String, completion: @escaping (Int) -> Void) {
         
         // first networking call
         // make a call here and put the completion block inside the .success block
@@ -67,7 +67,7 @@ class ViewController: UIViewController {
         
     }
     
-    private func secondNetworkCall(parameters: String, completion: @escaping (Int) -> ()) {
+    private func secondNetworkCall(parameters: String, completion: @escaping (Int) -> Void) {
         
         // second networking call
         // make a call here and put the completion block inside the .success block
